@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <table style="border: 2px solid;" >
+        <tr>
+            
+            <td>
+                
+                First name:
+            </td>
+            <td>
+                <input type="text" id="fname">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Second name:
+            </td>
+            <td>
+                <input type="text" id="sname">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Gender:
+            </td>
+            <td>
+                
+                <input type="radio" id="male" name="gender" value="male">Male
+                <input type="radio" id="female" name="gender" value="female">Female
+                <input type="radio" id="other" name="gender" value="other">Other
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Profile image:
+            </td>
+            <td>
+                <input type="file" name="myfile" accept="image/*">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                self-description:
+            </td>
+            <td>
+                <textarea name="self-description" id="self-description" cols=20" rows="03"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Country:
+            </td>
+            <td>
+                <select name="country" id="country">
+                <option value="Select">Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Austalia">Austalia</option>
+                <option value="Africa">Africa</option>
+                <option value="France">France</option>
+                <option value="other">other</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button value="submit" name="submit">Submit</button>
+            </td>
+
+            <td>
+                <button value="reset" name="reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
