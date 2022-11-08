@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <button class="back1" onclick="back1()">Back</button>
+    <div class="login-form">
+    <form action="">
+        <input type="text" placeholder="Name" id="name" class="name1"><br>
+        <input type="text" name="email" placeholder="Email" id="email" class="email"><br>
+        <input type="date" name="date" id="date1" class="date"><br>
+        <input type="time" name="" id="time1"><br>
+        <input type="text" name="pepole" id="pepole1" placeholder="Number Of Pepoles"><br>
+        <button class="book" onclick="store()">Book</button>
+    </form>
+</div>
+    <script>
+        function back1()
+        {
+            window.history.back();
+        }
+        function store()
+        {
+            var name=document.getElementById('name').value;
+            let email=document.getElementById("email").value;
+            let date=document.getElementById("date1").value;
+            let time=document.getElementById("time1").value;
+            let pepole=document.getElementById("pepole1").value;
+            
+
+            let c={
+                name: name,
+                email:email,
+                date: date1,
+                time: time1,
+                pepole: pepole1
+            }
+            window.localStorage.setItem('Reservation-Data',JSON.stringify(c));
+        }
+    </script>
+</body>
+</html>
